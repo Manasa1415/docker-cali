@@ -2,10 +2,10 @@
 FROM python:3.9
 
 # Set the working directory
-WORKDIR /code
+WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . /code
+COPY . /code.py
 
 # Run the Python script
 CMD ["python", "code.py"]
